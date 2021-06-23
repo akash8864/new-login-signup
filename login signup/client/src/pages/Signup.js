@@ -34,29 +34,17 @@ const Signup = ({ signup, isAuthenticated }) => {
     <div>
       <h1>Sign Up to your create an account</h1>
       <form onSubmit={(e) => onSubmit(e)}>
-        <input
-          type="text"
-          placeholder="Your name here"
-          name="name"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
-        />
+<input type="text"
+placeholder="Your name here" name="name" autoComplete="on" onChange={(e) => onChange(e)}
+/>
         <br />
-        <input
-          type="email"
-          placeholder="Your email here"
-          name="email"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
-        />
+<input type="email"
+placeholder="Your email here" name="email" autoComplete="on" onChange={(e)=>onChange(e)}
+/>
         <br />
-        <input
-          type="password"
-          placeholder="Your password here"
-          name="password"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
-        />
+<input type="password"
+placeholder="Your password here" name="password" autoComplete="on" onChange={(e) => onChange(e)}
+/>
         <br />
         <button className="button" type="submit">Create New Account</button>
       </form>
