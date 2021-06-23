@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { check_authenticated } from '../actions/action.auth';
 
 const Layout = (props) => {
-  console.log(props)
+  // console.log(props)
   useEffect(() => {
     props.check_authenticated();
   }, [props]);
