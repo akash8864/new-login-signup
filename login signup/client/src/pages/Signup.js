@@ -48,9 +48,6 @@ placeholder="Your password here" name="password" autoComplete="on" onChange={(e)
         <br />
         <button className="button" type="submit">Create New Account</button>
       </form>
-      <br />
-      <br />
-      <br />
       <h1>
         Already have an account?<Link to="/login">Login</Link>
       </h1>

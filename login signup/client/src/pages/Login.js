@@ -29,27 +29,17 @@ console.log(isAuthenticated)
       <h1>Sign In to your account</h1>
       <form onSubmit={(e) => onSubmit(e)}>
         <br />
-        <input
-          type="email"
-          placeholder="Your email here"
-          name="email"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
-        />
+<input type="email"
+placeholder="Your email here" name="email" autoComplete="on" onChange={(e) => onChange(e)}
+/>
         <br />
-        <input
-          type="password"
-          placeholder="Your password here"
-          name="password"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
+<input type="password" 
+placeholder="Your password here" name="password" autoComplete="on" onChange={(e) => onChange(e)}
         />
         <br />
         <button className="button" type="submit">Login</button>
       </form>
-      <br />
-      <br />
-      <br />
+    
       <h1>
         Dont have account?<Link to="/signup">Create Account</Link>
       </h1>
