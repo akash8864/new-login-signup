@@ -5,20 +5,19 @@ import { login } from "../actions/action.auth";
 
 const Login = ({ login, isAuthenticated }) => {
   const [loginData, SetLoginData] = useState({
-    name: "",
     email: "",
     password: "",
   });
 
-  const { name, email, password } = loginData;
+  const { email, password } = loginData;
 
   const onChange = (e) =>
     SetLoginData({ ...loginData, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, password);
-    login(name, email, password);
+    console.log( email, password);
+    login( email, password);
   };
 console.log(isAuthenticated)
   if (isAuthenticated) {
@@ -29,13 +28,6 @@ console.log(isAuthenticated)
     <div>
       <h1>Sign In to your account</h1>
       <form onSubmit={(e) => onSubmit(e)}>
-        <input
-          type="text"
-          placeholder="Your name here"
-          name="name"
-          autoComplete="on"
-          onChange={(e) => onChange(e)}
-        />
         <br />
         <input
           type="email"

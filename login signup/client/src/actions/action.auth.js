@@ -30,14 +30,15 @@ export const check_authenticated = () => async (dispatch) => {
   }
 };
 
-export const login = (name, email, password) => async (dispatch) => {
+export const login = ( email, password) => async (dispatch) => {
   const config = {
     headers: {
+      "Accept":"Application/json",
       "Content-Type": "application/json",
     },
   };
 
-  const body = JSON.stringify({ name, email, password });
+  const body = JSON.stringify({  email, password });
   console.log(body);
   try {
     const res = await axios.post("api/auth/signin-user", body, config);

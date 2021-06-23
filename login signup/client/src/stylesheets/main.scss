@@ -32,11 +32,11 @@ nav{
 }
 
 input {
-    width: 100%;
+    width: 92%;
     border-radius: 25px;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
+    box-sizing:inherit;
   }
   .button {
     background-color:rgb(28, 28, 59);
