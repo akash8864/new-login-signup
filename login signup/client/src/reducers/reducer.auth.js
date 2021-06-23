@@ -26,8 +26,9 @@ export default function (state = initialState, action) {
         loading: false,
         user: payload,
       };
-    case SIGNUP_SUCESS:
+    case SIGNUP_SUCESS:return console.log("user created")
     case LOGIN_SUCESS:
+      
       localStorage.setItem("access", payload.token);
       return {
         ...state,

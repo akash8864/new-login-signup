@@ -48,7 +48,7 @@ export const login = ( email, password) => async (dispatch) => {
       payload: res.data,
     });
     dispatch(check_authenticated());
-    console.log("user logged In!");
+    console.log("user logged in");
   } catch (err) {
     dispatch({
       type: LOGIN_FAILED,
@@ -72,8 +72,6 @@ export const signup = (name, email, password) => async (dispatch) => {
       type: SIGNUP_SUCESS,
       payload: res.data,
     });
-    dispatch(check_authenticated());
-    console.log("user created!");
   } catch (err) {
     dispatch({
       type: SIGNUP_FAILED,

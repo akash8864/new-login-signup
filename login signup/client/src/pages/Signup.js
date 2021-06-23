@@ -22,9 +22,7 @@ const Signup = ({ signup, isAuthenticated }) => {
     setAccountCreated(true);
   };
 
-  if (isAuthenticated) {
-    return <Redirect to="/login" />;
-  }
+
 
   if (accountCreated) {
     return <Redirect to="/login" />;
@@ -55,8 +53,5 @@ placeholder="Your password here" name="password" autoComplete="on" onChange={(e)
   );
 };
 
-const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
-});
 
-export default connect(mapStateToProps, { signup })(Signup);
+export default connect(null, { signup })(Signup);
